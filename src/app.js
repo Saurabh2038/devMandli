@@ -195,6 +195,6 @@ connectDB()
     });
 })
 .catch((err) => {
-    console.error("Database can't be connected");
+    console.error("Database can't be connected" + err.message);
 })
 
