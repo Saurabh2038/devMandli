@@ -23,4 +23,8 @@ const validateSignUpData = (req) => {
 
 }
 
-module.exports = {validateSignUpData};
+const validateProfileEditData = (req) => {
+    
+}
+
+module.exports = {validateSignUpData, };
