@@ -1,5 +1,5 @@
 
 node_modules/
-.env/
-apiList.md/
+.env
+apiList.md
 
