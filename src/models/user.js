@@ -34,10 +34,11 @@ const userSchema = mongoose.Schema({
         type: String,
         required: true,
         minLength: 6,
-        maxLength: 100,
+        maxLength: 70,
         validate: {
             validator: (value) => validator.isStrongPassword(value, {
                 minLength: 6,
+                maxLength: 70,
                 minLowercase: 1,
                 minUppercase: 1,
                 minNumbers: 1,
@@ -59,7 +60,7 @@ const userSchema = mongoose.Schema({
     },
     about: {
         type: String,
-        maxLength: 500,
+        maxLength: 1000,
         default: "",
     },
     skills: {

@@ -48,7 +48,7 @@ authRoute.post("/login", async (req, res) => {
                 throw new Error("Invalid credentials.");
             }
             else{
-                const isPasswordValid = user.validatePassword(password);
+                const isPasswordValid = await user.validatePassword(password);
                 if(!isPasswordValid){
                     throw new Error("Invalid credentials.");
                 }
